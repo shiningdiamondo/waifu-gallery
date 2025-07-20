@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Waifu GIFs Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Waifu Gallery</h1>
+  <button id="fav-toggle" aria-expanded="false">❤️ Favoritos</button>
+</header>
+
+<main id="gallery" aria-label="Galería de waifus"></main>
+
+<aside id="favorites" aria-hidden="true">
+  <h2>Favoritos <button id="fav-close">×</button></h2>
+  <div id="fav-grid"></div>
+</aside>
+
+<div id="modal" role="dialog" aria-modal="true">
+  <div id="modal-content">
+    <button id="modal-close">×</button>
+    <img src="" alt="Waifu grande" />
+    <p id="modal-desc" style="color:#eee;padding:8px;"></p>
+  </div>
+</div>
+
+<script src="script.js">
+</script>
+
+</body>
+</html>
